@@ -1,0 +1,16 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Mac and Cheese",
+      "image": "https://thebakermama.com/wp-content/uploads/2014/09/IMG_1588-scaled.jpg",
+      "ingredients": ["pasta", "cheese", "butter", "milk"]
+    },
+    {
+      "id": 2,
+      "name": "Grilled Cheese",
+      "image": "https://natashaskitchen.com/wp-content/uploads/2021/08/Grilled-Cheese-Sandwich-SQ.jpg",
+      "ingredients": ["bread", "butter", "cheese"]
+    }
+  ]
+}
