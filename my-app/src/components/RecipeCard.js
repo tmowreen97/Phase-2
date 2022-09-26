@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function RecipeCard({ recipes }){
-
+  
   return (
     <div className="recipeCard">
       {recipes.map((recipe)=> {
@@ -11,13 +11,23 @@ function RecipeCard({ recipes }){
             <img src={recipe.image} alt={recipe.name}/>
             <ul>
               Ingredients: 
-              {recipe.ingredients.map((ing)=> {
-                console.log(ing)
+              {recipe.ingredients.map((ing, i)=> {
                 return(
-                  <li key={ing}>
+                  <li key={i}>
                     {ing}
                   </li>
                 )
+              })}
+            </ul>
+            <ul>
+              Ingredients: 
+              {recipe.steps.map((step, i)=> {
+                return(
+                  <li key={i}>
+                    Step {i+1}: {step}
+                  </li>
+                )
+                
               })}
             </ul>
           </span>

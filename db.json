@@ -10,6 +10,12 @@
         "1/4 cup butter", 
         "3 cup milk", 
         "2 tbsp flour"
+      ], 
+      "steps":[
+        "Bring a pot of water to a boil. Cook elbow macaroni until al dente, about 8 minutes.",
+        "To make a roux, start by melting butter in a saucepan over medium heat. Add flour, salt, and pepper and stir until smooth. Slowly pour in milk and stir until the mixture is smooth and bubbling.",
+        "Add cheese! Slowly stir in Cheddar cheese until smooth and melted.",
+        "Once the macaroni is finished cooking, drain and stir into cheese sauce until coated. Done!"
       ]
     },
     {
@@ -20,6 +26,13 @@
         "2 each bread", 
         "1 tbsp butter", 
         "1/4 cup cheese"
+      ],
+      "steps":[
+        "Spread butter on two slices of bread and begin to toast one side of each slice on a pan.",
+        "Once toasted, flip to toast the other side",
+        "Before fully toasted, add your preffered cheese to one slice, and top with the other slice to create a sandwich",
+        "Flip as needed to perfectly toast both sides",
+        "Cut diagonally, watch the beautiful cheese pull, and enjoy!"
       ]
     }
   ]
