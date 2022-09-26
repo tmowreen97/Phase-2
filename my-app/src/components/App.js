@@ -1,6 +1,10 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
-
+import NavBar from "./NavBar";
+import About from "./About";
+import MyRecipes from "./MyRecipes";
+import AddRecipe from "./AddRecipe";
+import Home from "./Home";
 
 function App() {
   return (
