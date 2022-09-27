@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function AddIngredient( {ingredients, setIngredients, handleAddIngredient}){
+function AddIngredient( {handleAddIngredient}){
   const [ingQuantity, setIngQuantity] = useState('')
   const [ingUnit, setIngUnit] = useState('each ')
   const [ingName, setIngName] = useState('')
@@ -13,7 +13,7 @@ function AddIngredient( {ingredients, setIngredients, handleAddIngredient}){
         e.preventDefault()
         setIngQuantity(`${e.target.value} `)
       }}
-      type="text" placeholder="1"/>
+      type="text" placeholder="Quantity"/>
       <select onChange={(e)=>{
         e.preventDefault()
         setIngUnit(`${e.target.value} `)
@@ -33,7 +33,7 @@ function AddIngredient( {ingredients, setIngredients, handleAddIngredient}){
           console.log(ingName)
         }}
         type='text' 
-        placeholder="cheese"
+        placeholder="Item"
       />
       <button onClick={(e)=> {
         e.preventDefault()

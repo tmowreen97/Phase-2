@@ -20,7 +20,7 @@ function RecipeCard({ recipes }){
               })}
             </ul>
             <ul>
-              Ingredients: 
+              Steps: 
               {recipe.steps.map((step, i)=> {
                 return(
                   <li key={i}>

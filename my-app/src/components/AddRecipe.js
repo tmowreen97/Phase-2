@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import AddIngredient from "./AddIngredient";
+import AddStep from "./AddStep";
 
 export default function AddRecipe(){
   const [recipeName, setRecipeName]= useState('')
   const [ingredients, setIngredients]= useState(['placeholder'])
-  console.log(ingredients)
+  const [stepList, setStepList]= useState(['placeholder'])
+
 
   // useEffect(()=> {
   //   fetch("http://localhost:3000/recipes")
@@ -19,9 +21,17 @@ export default function AddRecipe(){
   //       setIngredients(newIngredients)
   //   })
   // },[])
+
   function handleAddIngredient(e, newIngredient){
     e.preventDefault()
     setIngredients([...ingredients,newIngredient])
+  }
+
+  function handleNewStep(e, newStep){
+    e.preventDefault()
+    setStepList([...stepList, newStep])
+
+
   }
   return(
     <div className="addRecipe">
@@ -33,8 +43,8 @@ export default function AddRecipe(){
             placeholder="Name"
             value={recipeName}
             onChange={(e)=> {
-              console.log(e.target.value)
-              setRecipeName(e.target.value)} }
+              setRecipeName(e.target.value)
+            }}
           />
         </ul>
         <ul>
@@ -45,23 +55,26 @@ export default function AddRecipe(){
         </ul>
         {
           ingredients.map((x, i)=> {
-            console.log(ingredients)
-
             return(
               <AddIngredient ingredients={ingredients} setIngredients={setIngredients} handleAddIngredient={handleAddIngredient}/>
             )
           })
         }
-
         <ul>
-        <label>Steps:</label>
-        <input 
-          type='text'
-        />
-        <button onClick={(e)=>{
-          e.preventDefault()
-          console.log('step')}}>Add Step</button>
+        {/* <label>Step 1</label> */}
+        {
+          stepList.map((x, i)=> {
+            return (
+              <span>
+                <label>Step {i+1}</label>
+                <AddStep setStepList={setStepList} stepList={stepList} handleNewStep={handleNewStep}/>
+              </span>
+              
+            )
+          })
+        }
         </ul>
+
 
 
         <button>Submit New Recipe</button>
