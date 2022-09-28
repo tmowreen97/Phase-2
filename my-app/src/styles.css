@@ -1,6 +1,6 @@
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 
 body {
   margin:0;
@@ -8,17 +8,22 @@ body {
 }
 .addRecipe{
   
-  display:flex;
-  width: 50rem;
-
+  display:flexbox;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-top: 10%;
+  padding-top: .3rem;
+  padding-bottom: .8rem;
   justify-content: center;
+  align-content: center;
+  align-items: center; 
   text-align: center;
-  align-items: center;
-  background-color: aqua;
+  background-color:rgba(236, 227, 193, 0.819);
+  
 }
 
 .nav {
-  background-color:cornflowerblue;
+  background-color:rgb(228, 162, 86);
   color: white;
   display:flex;
   justify-content:center;
@@ -47,19 +52,22 @@ body {
 }
 
 .nav a:hover{
-  background-color:rgb(19, 219, 250);
+  background-color:rgb(217, 113, 21);
 }
 
 .active{
-  background-color: rgba(19, 219, 250, 0.58);
+  background-color: rgb(213, 126, 50);
 }
 
 .home{
-  background: aquamarine;
+  text-align: center;
   height: 100%;
 }
 
-.addRecipe {
+/* .addRecipe {
+  text-align: center;
+} */
+
+h3 {
   text-align: center;
 }
-

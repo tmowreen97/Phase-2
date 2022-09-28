@@ -60,7 +60,7 @@ export default function AddRecipe(){
 
   return(
     <div className="addRecipe">
-      <p>Add a Recipe!</p>
+      <h3 className="recipeTitle">Add a Recipe!</h3>
       <form>
         <ul>
           <input 
