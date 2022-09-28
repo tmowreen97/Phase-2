@@ -8,7 +8,7 @@ import Home from "./Home";
 
 function App() {
   return (
-    <div className="app">
+    <div className="app" >
       <NavBar/>
       <Switch>
         <Route path="/about">

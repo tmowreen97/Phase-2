@@ -1,9 +1,20 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   margin:0;
+  background-image: url("https://media.istockphoto.com/vectors/herbs-and-spices-seamless-pattern-ginger-spinach-onion-pepper-garlic-vector-id1258733624?k=20&m=1258733624&s=612x612&w=0&h=O1jNq06ugDRlw6I_RQwnh_79gFwYTXihoB7_Lptdxfs=");
+}
+.addRecipe{
+  
+  display:flex;
+  width: 50rem;
+
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: aqua;
 }
 
 .nav {
@@ -44,9 +55,11 @@ body {
 }
 
 .home{
-  text-align: center;
+  background: aquamarine;
+  height: 100%;
 }
 
 .addRecipe {
   text-align: center;
 }
+
