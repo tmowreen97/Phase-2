@@ -5,13 +5,13 @@
       "name": "Mac and Cheese",
       "image": "https://thebakermama.com/wp-content/uploads/2014/09/IMG_1588-scaled.jpg",
       "ingredients": [
-        "1 lb pasta", 
-        "2 cups cheese", 
-        "1/4 cup butter", 
-        "3 cup milk", 
+        "1 lb pasta",
+        "2 cups cheese",
+        "1/4 cup butter",
+        "3 cup milk",
         "2 tbsp flour"
-      ], 
-      "steps":[
+      ],
+      "steps": [
         "Bring a pot of water to a boil. Cook elbow macaroni until al dente, about 8 minutes.",
         "To make a roux, start by melting butter in a saucepan over medium heat. Add flour, salt, and pepper and stir until smooth. Slowly pour in milk and stir until the mixture is smooth and bubbling.",
         "Add cheese! Slowly stir in Cheddar cheese until smooth and melted.",
@@ -23,17 +23,33 @@
       "name": "Grilled Cheese",
       "image": "https://natashaskitchen.com/wp-content/uploads/2021/08/Grilled-Cheese-Sandwich-SQ.jpg",
       "ingredients": [
-        "2 each bread", 
-        "1 tbsp butter", 
+        "2 each bread",
+        "1 tbsp butter",
         "1/4 cup cheese"
       ],
-      "steps":[
+      "steps": [
         "Spread butter on two slices of bread and begin to toast one side of each slice on a pan.",
         "Once toasted, flip to toast the other side",
         "Before fully toasted, add your preffered cheese to one slice, and top with the other slice to create a sandwich",
         "Flip as needed to perfectly toast both sides",
         "Cut diagonally, watch the beautiful cheese pull, and enjoy!"
       ]
+    },
+    {
+      "name": "PB&J Sandwich",
+      "image": "https://www.baycare.net/media/5194/pbj-baycare-clinic-blog.jpg",
+      "ingredients": [
+        "2 each bread",
+        "1 tbsp(s) peanut butter",
+        "1 tbsp(s) jelly"
+      ],
+      "steps": [
+        "First toast both slices of bread.",
+        "Then on one side of a slice, slather peanut butter. ",
+        "On one side of the other slice, slather jelly.",
+        "Join the peanut buttered and jellied slices of bread together, and you have your sandwich! Enjoy!"
+      ],
+      "id": 3
     }
   ]
 }

@@ -12,7 +12,7 @@ function AddStep({ handleNewStep }){
           setStep(e.target.value)
         }}
         type='add'
-        placeholder="Steps"
+        placeholder="Add a Step"
       />
       <button onClick={(e)=>{
         e.preventDefault()
