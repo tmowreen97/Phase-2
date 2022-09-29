@@ -73,6 +73,31 @@
         "Stack bread on a plate, drizzle maple syrup and top with whipped cream and your choice of berries. Enjoy!"
       ],
       "id": 4
+    },
+    {
+      "name": "Chocolate Chip Cookies",
+      "image": "https://www.ihearteating.com/wp-content/uploads/2016/08/Easiest-Chocolate-Chip-Cookies-1-800-2.jpg",
+      "ingredients": [
+        "1/2 cup(s) butter",
+        "1/2 cup(s) granulated sugar",
+        "1/4 cup(s) brown sugar",
+        "2 tsp(s) vanilla extract",
+        "1 each egg",
+        "1 3/4 cup(s) all purpose flour",
+        "1/2 tsp(s) baking soda",
+        "1/2 tsp(s) salt",
+        "1 cup(s) semi-sweet chocolate chips"
+      ],
+      "steps": [
+        "Preheat oven to 350 F",
+        "Microwave butter until melted. ",
+        "In a bowl, mix butter, sugar, vanilla and egg.",
+        "Add flour, baking soda, and salt and give a good mix.",
+        "Stir in chocolate chips.",
+        "Scoop 1.5 tbsps of dough and place 2 inches apart on a baking sheet.",
+        "Bake for 7-10 minute or until cookies are set. Enjoy!"
+      ],
+      "id": 5
     }
   ]
 }
