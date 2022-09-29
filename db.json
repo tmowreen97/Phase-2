@@ -50,6 +50,29 @@
         "Join the peanut buttered and jellied slices of bread together, and you have your sandwich! Enjoy!"
       ],
       "id": 3
+    },
+    {
+      "name": "French Toast",
+      "image": "https://natashaskitchen.com/wp-content/uploads/2021/03/French-Toast-8.jpg",
+      "ingredients": [
+        "3 each bread",
+        "1 tbsp(s) butter",
+        "2 each eggs",
+        "1 cup(s) milk",
+        "1/4 tsp(s) nutmeg",
+        "1/2 tsp(s) cinnamon",
+        "1 tbsp(s) maple syrup",
+        "1 tbsp(s) whipped cream",
+        "1/4 cup(s) mixed berries"
+      ],
+      "steps": [
+        "Mix milk, eggs, nutmeg and cinnamon in a bowl.",
+        "Soak slices of bread in egg mixture, but not for too long!",
+        "On a skillet, heat up butter.",
+        "Toast each slice of bread until golden brown on all sides.",
+        "Stack bread on a plate, drizzle maple syrup and top with whipped cream and your choice of berries. Enjoy!"
+      ],
+      "id": 4
     }
   ]
 }

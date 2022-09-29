@@ -64,10 +64,64 @@ body {
   height: 100%;
 }
 
-/* .addRecipe {
+/* h2 {
   text-align: center;
+  text-decoration:double;
 } */
 
-h3 {
+.recipeimg{
+  width:50%;
+}
+.recipeCard{
+  background-color:rgba(236, 227, 193, 0.819) ;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 15%;
+}
+.myRecipes{
+  align-items: center;
+  justify-content: center;
   text-align: center;
+
+}
+
+h2{
+  color:rgb(46, 28, 2);
+  text-align: center;
+}
+h3{
+  color:rgb(46, 28, 2)
+  
+}
+
+ul{
+  list-style:circle;
+  list-style-position: inside;
+}
+
+h1{
+  font-family: 'Leckerli One';
+  color:rgb(46, 28, 2);
+  font-weight:50;
+  font-size: 500%;
+  background-color:rgba(236, 227, 193, 0.819);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.about{
+  background-color:rgba(236, 227, 193, 0.819);
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.lastLine{
+  font-style: oblique;
 }

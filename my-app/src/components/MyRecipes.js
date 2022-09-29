@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import RecipeCard from "./RecipeCard";
-import AddRecipe from "./AddRecipe";
 
 function MyRecipes(){
   const [myRecipes, setRecipes] = useState(null)
@@ -15,7 +14,7 @@ function MyRecipes(){
   }, [])
 
   return(
-    <div>
+    <div className="myRecipes">
 {      myRecipes && <RecipeCard recipes={myRecipes}/>
 }    </div>
 

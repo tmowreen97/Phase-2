@@ -8,21 +8,6 @@ export default function AddRecipe(){
   const [ingredients, setIngredients]= useState(['placeholder'])
   const [stepList, setStepList]= useState(['placeholder'])
 
-
-  // useEffect(()=> {
-  //   fetch("http://localhost:3000/recipes")
-  //   .then( resp => resp.json())
-  //   .then( (data) => {
-  //     console.log(data)
-  //     const newIngredients=[]
-  //     data.map((recipe)=> {
-  //       console.log('recipe', recipe)
-  //       newIngredients.push(recipe.ingredients)
-  //       })
-  //       setIngredients(newIngredients)
-  //   })
-  // },[])
-
   function handleAddIngredient(e, newIngredient){
     e.preventDefault()
     setIngredients([...ingredients,newIngredient])
@@ -103,7 +88,7 @@ export default function AddRecipe(){
         }
         </ul>
 
-        <button onSubmit={(e)=> {handleSubmit(e)}}>Submit New Recipe</button>
+        <button onClick={(e)=> {handleSubmit(e)}}>Submit New Recipe</button>
 
 
       </form>

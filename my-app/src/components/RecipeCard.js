@@ -8,7 +8,7 @@ function RecipeCard({ recipes }){
         return (
           <span key={recipe.id}>
             <h2>{recipe.name} </h2>
-            <img src={recipe.image} alt={recipe.name}/>
+            <img className="recipeimg" src={recipe.image} alt={recipe.name}/>
             <ul>
               Ingredients: 
               {recipe.ingredients.map((ing, i)=> {
