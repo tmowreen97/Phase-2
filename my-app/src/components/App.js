@@ -10,8 +10,9 @@ function App() {
   const [myRecipes, setRecipes] = useState([])
   const history = useHistory()
   function handleAddRecipe(newRecipe){
-    console.log('hi')
     myRecipes && setRecipes([...myRecipes,newRecipe])
+    alert("You've added a new recipe!")
+    history.push("/myRecipes")
   }
 
 
