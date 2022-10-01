@@ -13,8 +13,7 @@ export default function AddRecipe({ handleAddRecipe }){
     setIngredients([...ingredients,newIngredient])
   }
 
-  function handleNewStep(e, newStep){
-    e.preventDefault()
+  function handleNewStep(newStep){
     setStepList([...stepList, newStep])
   }
 

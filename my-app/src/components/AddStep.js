@@ -17,7 +17,7 @@ function AddStep({ handleNewStep }){
       <button onClick={(e)=>{
         e.preventDefault()
         setStepCounter((stepCounter) => stepCounter+1)
-        handleNewStep(e, step)
+        handleNewStep(step)
       }}>Add Step
       </button>  
     </div>
