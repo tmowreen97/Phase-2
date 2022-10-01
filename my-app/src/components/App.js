@@ -9,12 +9,12 @@ import Home from "./Home";
 function App() {
   const [myRecipes, setRecipes] = useState([])
   const history = useHistory()
+
   function handleAddRecipe(newRecipe){
     myRecipes && setRecipes([...myRecipes,newRecipe])
     alert("You've added a new recipe!")
     history.push("/myRecipes")
   }
-
 
   return (
     <div className="app" >

@@ -64,19 +64,17 @@ body {
   height: 100%;
 }
 
-/* h2 {
-  text-align: center;
-  text-decoration:double;
-} */
-
 .recipeimg{
   width:50%;
 }
-.recipeCard{
+.recipeList{
   background-color:rgba(236, 227, 193, 0.819) ;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 15%;
+  margin-top: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 .myRecipes{
   align-items: center;

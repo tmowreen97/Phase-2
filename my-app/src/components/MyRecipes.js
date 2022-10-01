@@ -9,7 +9,7 @@ function MyRecipes( {setRecipes, myRecipes} ){
     .then((data)=> {
       setRecipes(data)
     })
-  }, [])
+  }, [setRecipes])
 
   return(
     <div className="myRecipes">

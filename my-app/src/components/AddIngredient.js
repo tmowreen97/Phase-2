@@ -30,7 +30,6 @@ function AddIngredient( {handleAddIngredient}){
         onChange={(e)=> {
           e.preventDefault()
           setIngName(`${e.target.value}`)
-          console.log(ingName)
         }}
         type='text' 
         placeholder="Item"

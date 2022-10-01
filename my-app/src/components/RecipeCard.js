@@ -1,9 +1,9 @@
 import React from "react";
 
-function RecipeCard({ recipes }){
+function RecipeList({ recipes }){
   
   return (
-    <div className="recipeCard">
+    <div className="recipeList">
       {recipes.map((recipe)=> {
         return (
           <div key={recipe.id}>
@@ -37,4 +37,4 @@ function RecipeCard({ recipes }){
 
 }
 
-export default RecipeCard;
+export default RecipeList;
