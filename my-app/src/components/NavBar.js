@@ -13,11 +13,11 @@ function NavBar(){
   )
 }
 
-function CustomLink({ href, children, ...props}){
+function CustomLink({ href, children}){
   const path= window.location.pathname
   return (
     <li className={path === href ? "active" : ""}>
-      <a href={href} {...props}>
+      <a href={href}>
         {children}
       </a>
     </li>
