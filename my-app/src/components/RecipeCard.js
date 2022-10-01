@@ -6,7 +6,7 @@ function RecipeCard({ recipes }){
     <div className="recipeCard">
       {recipes.map((recipe)=> {
         return (
-          <span key={recipe.id}>
+          <div key={recipe.id}>
             <h2>{recipe.name} </h2>
             <img className="recipeimg" src={recipe.image} alt={recipe.name}/>
             <ul>
@@ -27,10 +27,9 @@ function RecipeCard({ recipes }){
                     Step {i+1}: {step}
                   </li>
                 )
-                
               })}
             </ul>
-          </span>
+          </div>
         )
       })}
     </div>

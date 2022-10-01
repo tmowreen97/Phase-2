@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import RecipeCard from "./RecipeCard";
+import RecipeList from "./RecipeCard";
 
 function MyRecipes( {setRecipes, myRecipes} ){
 
@@ -13,11 +13,9 @@ function MyRecipes( {setRecipes, myRecipes} ){
 
   return(
     <div className="myRecipes">
-{      myRecipes && <RecipeCard recipes={myRecipes}/>
-}    </div>
-
-  )
-    
+      {myRecipes && <RecipeList recipes={myRecipes}/>}
+    </div>
+  ) 
 }
 
 export default MyRecipes

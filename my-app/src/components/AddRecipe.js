@@ -40,7 +40,7 @@ export default function AddRecipe({ handleAddRecipe }){
       body: JSON.stringify(recipeData)
     })
     .then(res=> res.json())
-    .then(newRecipe => console.log(newRecipe))
+    .then(newRecipe => handleAddRecipe(newRecipe))
   }
 
   return(
