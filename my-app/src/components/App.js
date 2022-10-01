@@ -9,6 +9,10 @@ import Home from "./Home";
 function App() {
   const [myRecipes, setRecipes] = useState([])
   const history = useHistory()
+  function handleAddRecipe(newRecipe){
+    console.log('hi')
+    myRecipes && setRecipes([...myRecipes,newRecipe])
+  }
 
 
   return (
