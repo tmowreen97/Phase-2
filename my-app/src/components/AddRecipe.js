@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import AddIngredient from "./AddIngredient";
 import AddStep from "./AddStep";
 
-export default function AddRecipe(){
+export default function AddRecipe({ handleAddRecipe }){
   const [recipeName, setRecipeName]= useState('')
   const [imageURL, setImageURL] = useState('')
   const [ingredients, setIngredients]= useState(['placeholder'])
@@ -29,8 +30,8 @@ export default function AddRecipe(){
     const recipeData= {
       name: recipeName,
       image:imageURL,
-      ingredients:newIngList,
-      steps:newStepList
+      ingredients: newIngList,
+      steps: newStepList
     }
     fetch("http://localhost:3000/recipes", {
       method: "POST",
@@ -40,13 +41,13 @@ export default function AddRecipe(){
       body: JSON.stringify(recipeData)
     })
     .then(res=> res.json())
-    .then(data => console.log(data))
+    .then(newRecipe => console.log(newRecipe))
   }
 
   return(
     <div className="addRecipe">
       <h3 className="recipeTitle">Add a Recipe!</h3>
-      <form>
+      <form onSubmit={handleSubmit}>
         <ul>
           <input 
             type='text'
@@ -69,16 +70,18 @@ export default function AddRecipe(){
         {
           ingredients.map((x, i)=> {
             return(
-              <AddIngredient ingredients={ingredients} setIngredients={setIngredients} handleAddIngredient={handleAddIngredient}/>
+              <span key={i}>
+                <AddIngredient ingredients={ingredients} setIngredients={setIngredients} handleAddIngredient={handleAddIngredient}/>
+              </span>
+              
             )
           })
         }
         <ul>
         {
           stepList.map((x, i)=> {
-            console.log(x)
             return (
-              <span>
+              <span key={i}>
                 <label>Step {i+1}</label>
                 <AddStep setStepList={setStepList} stepList={stepList} handleNewStep={handleNewStep}/>
               </span>
@@ -88,7 +91,7 @@ export default function AddRecipe(){
         }
         </ul>
 
-        <button onClick={(e)=> {handleSubmit(e)}}>Submit New Recipe</button>
+        <button type="submit">Submit New Recipe</button>
 
 
       </form>

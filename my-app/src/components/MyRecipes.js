@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import RecipeCard from "./RecipeCard";
 
-function MyRecipes(){
-  const [myRecipes, setRecipes] = useState(null)
+function MyRecipes( {setRecipes, myRecipes} ){
 
   useEffect(()=> {
     fetch("http://localhost:3000/recipes")
     .then(resp => resp.json())
     .then((data)=> {
-      console.log(data)
       setRecipes(data)
     })
   }, [])
