@@ -11,7 +11,7 @@ body {
   display:flexbox;
   margin-right: 30%;
   margin-left: 30%;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-bottom: 10%;
   padding-top: .3rem;
   padding-bottom: .8rem;
@@ -59,7 +59,6 @@ body {
 
 .home{
   text-align: center;
-  height: 100%;
 }
 
 .recipeimg{
@@ -104,7 +103,7 @@ h1{
   background-color:rgba(236, 227, 193, 0.819);
   padding-top: 5%;
   padding-bottom: 5%;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-right: 20%;
   margin-left: 20%;
 }
@@ -114,7 +113,7 @@ h1{
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-right: 20%;
   margin-left: 20%;
 }

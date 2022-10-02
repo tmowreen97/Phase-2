@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import RecipeList from "./RecipeCard";
+import RecipeList from "./RecipeList";
 
 function MyRecipes( {setRecipes, myRecipes} ){
 
