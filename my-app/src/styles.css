@@ -12,11 +12,9 @@ body {
   margin-right: 30%;
   margin-left: 30%;
   margin-top: 10%;
+  margin-bottom: 10%;
   padding-top: .3rem;
   padding-bottom: .8rem;
-  justify-content: center;
-  align-content: center;
-  align-items: center; 
   text-align: center;
   background-color:rgba(236, 227, 193, 0.819);
   
@@ -88,7 +86,8 @@ h2{
   text-align: center;
 }
 h3{
-  color:rgb(46, 28, 2)
+  color:rgb(46, 28, 2);
+  text-align: center;
   
 }
 

@@ -98,6 +98,27 @@
         "Bake for 7-10 minute or until cookies are set. Enjoy!"
       ],
       "id": 5
+    },
+    {
+      "name": "Masala Omelette",
+      "image": "https://www.carolinescooking.com/wp-content/uploads/2020/09/masala-omelette-photo.jpg",
+      "ingredients": [
+        "1/4 each onion",
+        "2 each eggs",
+        "1/2 each tomato",
+        "1 each cilantro",
+        "1/4 tsp(s) chili powder",
+        "1/2 tbsp(s) oil"
+      ],
+      "steps": [
+        "Crack two eggs in a bowl.",
+        "Add diced up onions, tomato and cilantro to egg mixture. Stir together.",
+        "Add spices, and salt to taste.",
+        "On a non-stick skillet, add oil and turn heat on to medium-high.",
+        "Once oil is heated up, add egg mixture and cook until golden brown on each side. ",
+        "Enjoy with bread, and coffee!"
+      ],
+      "id": 6
     }
   ]
 }
