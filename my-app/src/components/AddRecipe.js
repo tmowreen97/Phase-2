@@ -68,10 +68,9 @@ export default function AddRecipe({ handleAddRecipe }){
         {
           ingredients.map((x, i)=> {
             return(
-              <span key={i}>
+              <span key={x}>
                 <AddIngredient ingredients={ingredients} setIngredients={setIngredients} handleAddIngredient={handleAddIngredient}/>
               </span>
-              
             )
           })
         }
@@ -79,21 +78,16 @@ export default function AddRecipe({ handleAddRecipe }){
         {
           stepList.map((x, i)=> {
             return (
-              <span key={i}>
+              <span key={x}>
                 <label>Step {i+1}</label>
                 <AddStep setStepList={setStepList} stepList={stepList} handleNewStep={handleNewStep}/>
               </span>
-              
             )
           })
         }
         </ul>
-
         <button type="submit">Submit New Recipe</button>
-
-
       </form>
     </div>
-    
   )
 }

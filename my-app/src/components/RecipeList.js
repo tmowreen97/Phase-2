@@ -1,6 +1,6 @@
 import React from "react";
 
-function RecipeList({ recipes }){
+export default function RecipeList({ recipes }){
   
   return (
     <div className="recipeList">
@@ -13,7 +13,7 @@ function RecipeList({ recipes }){
               Ingredients: 
               {recipe.ingredients.map((ing, i)=> {
                 return(
-                  <li key={i}>
+                  <li key={ing}>
                     {ing}
                   </li>
                 )
@@ -23,7 +23,7 @@ function RecipeList({ recipes }){
               Steps: 
               {recipe.steps.map((step, i)=> {
                 return(
-                  <li key={i}>
+                  <li key={step}>
                     Step {i+1}: {step}
                   </li>
                 )
@@ -36,5 +36,3 @@ function RecipeList({ recipes }){
   )
 
 }
-
-export default RecipeList;

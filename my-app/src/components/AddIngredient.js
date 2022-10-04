@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function AddIngredient( {handleAddIngredient}){
+function AddIngredient( { handleAddIngredient }){
   const [ingQuantity, setIngQuantity] = useState('')
   const [ingUnit, setIngUnit] = useState('each ')
   const [ingName, setIngName] = useState('')

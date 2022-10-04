@@ -18,4 +18,4 @@ function MyRecipes( {setRecipes, myRecipes} ){
   ) 
 }
 
-export default MyRecipes
+export default MyRecipes;
