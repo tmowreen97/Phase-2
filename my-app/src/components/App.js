@@ -6,8 +6,8 @@ import MyRecipes from "./MyRecipes";
 import AddRecipe from "./AddRecipe";
 import Home from "./Home";
 
-function App() {
-  const [myRecipes, setRecipes] = useState([])
+export default function App() {
+  const [myRecipes, setRecipes] = useState(null)
   const history = useHistory()
 
   function handleAddRecipe(newRecipe){
@@ -37,4 +37,3 @@ function App() {
   );
 }
 
-export default App;

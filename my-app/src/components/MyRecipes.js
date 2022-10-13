@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import RecipeList from "./RecipeList";
 
-function MyRecipes( {setRecipes, myRecipes} ){
+export default function MyRecipes( {setRecipes, myRecipes} ){
 
   useEffect(()=> {
     fetch("http://localhost:3000/recipes")
@@ -9,7 +9,8 @@ function MyRecipes( {setRecipes, myRecipes} ){
     .then((data)=> {
       setRecipes(data)
     })
-  }, [setRecipes])
+  }, [])
+  console.log(myRecipes)
 
   return(
     <div className="myRecipes">
@@ -17,5 +18,3 @@ function MyRecipes( {setRecipes, myRecipes} ){
     </div>
   ) 
 }
-
-export default MyRecipes;

@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function RecipeList({ recipes }){
-  
   return (
     <div className="recipeList">
       {recipes.map((recipe)=> {
@@ -34,5 +33,4 @@ export default function RecipeList({ recipes }){
       })}
     </div>
   )
-
 }

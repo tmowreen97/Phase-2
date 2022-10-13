@@ -8,8 +8,7 @@ export default function AddRecipe({ handleAddRecipe }){
   const [ingredients, setIngredients]= useState(['placeholder'])
   const [stepList, setStepList]= useState(['placeholder'])
 
-  function handleAddIngredient(e, newIngredient){
-    e.preventDefault()
+  function handleAddIngredient(newIngredient){
     setIngredients([...ingredients,newIngredient])
   }
 
@@ -19,10 +18,10 @@ export default function AddRecipe({ handleAddRecipe }){
 
   function handleSubmit(e){
     e.preventDefault()
-    let newIngList = ingredients.filter((ing)=> {
+    const newIngList = ingredients.filter((ing)=> {
       return ing !== "placeholder"
     })
-    let newStepList = stepList.filter((step)=> {
+    const newStepList = stepList.filter((step)=> {
       return step !== "placeholder"
     })
     const recipeData= {
@@ -50,7 +49,6 @@ export default function AddRecipe({ handleAddRecipe }){
           <input 
             type='text'
             placeholder="Name"
-            value={recipeName}
             onChange={(e)=> {
               setRecipeName(e.target.value)
             }}
@@ -68,9 +66,9 @@ export default function AddRecipe({ handleAddRecipe }){
         {
           ingredients.map((x, i)=> {
             return(
-              <>
-                <AddIngredient key={x} ingredients={ingredients} setIngredients={setIngredients} handleAddIngredient={handleAddIngredient}/>
-              </>
+              <span key={x}>
+                <AddIngredient ingredients={ingredients} setIngredients={setIngredients} handleAddIngredient={handleAddIngredient}/>
+              </span>
             )
           })
         }
@@ -78,10 +76,10 @@ export default function AddRecipe({ handleAddRecipe }){
         {
           stepList.map((x, i)=> {
             return (
-              <>
+              <span key={x}>
                 <label>Step {i+1}</label>
-                <AddStep key={x} setStepList={setStepList} stepList={stepList} handleNewStep={handleNewStep}/>
-              </>
+                <AddStep setStepList={setStepList} stepList={stepList} handleNewStep={handleNewStep}/>
+              </span>
             )
           })
         }

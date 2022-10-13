@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function AddIngredient( { handleAddIngredient }){
+export default function AddIngredient( { handleAddIngredient }){
   const [ingQuantity, setIngQuantity] = useState(null)
   const [ingUnit, setIngUnit] = useState('each ')
   const [ingName, setIngName] = useState(null)
@@ -30,12 +30,11 @@ function AddIngredient( { handleAddIngredient }){
         placeholder="Item"
       />
       <button onClick={(e)=> {
+        e.preventDefault()
         ingredientList.push(ingQuantity, ingUnit, ingName)
         let newIngredient = ingredientList.join('')
-        handleAddIngredient(e, newIngredient)
+        handleAddIngredient(newIngredient)
       }}>Add Ingredient</button>
      </ul> 
   )
 }
-
-export default AddIngredient

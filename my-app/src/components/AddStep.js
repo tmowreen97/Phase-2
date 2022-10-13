@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
-function AddStep({ handleNewStep }){
-  const [stepCounter, setStepCounter] = useState(1)
+export default function AddStep({ handleNewStep }){
   const [step, setStep]=useState('')
-
 
   return(
     <div>
@@ -16,12 +14,9 @@ function AddStep({ handleNewStep }){
       />
       <button onClick={(e)=>{
         e.preventDefault()
-        setStepCounter((stepCounter) => stepCounter+1)
         handleNewStep(step)
       }}>Add Step
       </button>  
     </div>
   )
 }
-
-export default AddStep;
