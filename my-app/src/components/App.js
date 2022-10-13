@@ -7,7 +7,7 @@ import AddRecipe from "./AddRecipe";
 import Home from "./Home";
 
 function App() {
-  const [myRecipes, setRecipes] = useState([])
+  const [myRecipes, setRecipes] = useState(null)
   const history = useHistory()
 
   function handleAddRecipe(newRecipe){

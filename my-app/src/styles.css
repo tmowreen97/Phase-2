@@ -60,6 +60,15 @@ body {
 .home{
   text-align: center;
 }
+.about{
+  background-color:rgba(236, 227, 193, 0.819);
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 15%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
 
 .recipeimg{
   width:50%;
@@ -101,16 +110,6 @@ h1{
   font-weight:50;
   font-size: 500%;
   background-color:rgba(236, 227, 193, 0.819);
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin-top: 15%;
-  margin-right: 20%;
-  margin-left: 20%;
-}
-
-.about{
-  background-color:rgba(236, 227, 193, 0.819);
-  text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
   margin-top: 15%;
