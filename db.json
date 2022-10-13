@@ -119,6 +119,20 @@
         "Enjoy with bread, and coffee!"
       ],
       "id": 6
+    },
+    {
+      "name": "Milk & Cereal",
+      "image": "https://enprocal.com.au/wp-content/uploads/2019/07/Fortified-Milk-Cereal.jpg",
+      "ingredients": [
+        "3/4 cup(s) milk",
+        "1 cup(s) cereal"
+      ],
+      "steps": [
+        "Pour milk into bowl.",
+        "Pour cereal into milk.",
+        "Enjoy!"
+      ],
+      "id": 7
     }
   ]
 }

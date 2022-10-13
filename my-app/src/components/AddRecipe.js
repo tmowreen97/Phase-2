@@ -68,9 +68,9 @@ export default function AddRecipe({ handleAddRecipe }){
         {
           ingredients.map((x, i)=> {
             return(
-              <span key={x}>
-                <AddIngredient ingredients={ingredients} setIngredients={setIngredients} handleAddIngredient={handleAddIngredient}/>
-              </span>
+              <>
+                <AddIngredient key={x} ingredients={ingredients} setIngredients={setIngredients} handleAddIngredient={handleAddIngredient}/>
+              </>
             )
           })
         }
@@ -78,10 +78,10 @@ export default function AddRecipe({ handleAddRecipe }){
         {
           stepList.map((x, i)=> {
             return (
-              <span key={x}>
+              <>
                 <label>Step {i+1}</label>
-                <AddStep setStepList={setStepList} stepList={stepList} handleNewStep={handleNewStep}/>
-              </span>
+                <AddStep key={x} setStepList={setStepList} stepList={stepList} handleNewStep={handleNewStep}/>
+              </>
             )
           })
         }

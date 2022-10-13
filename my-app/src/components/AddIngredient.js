@@ -1,23 +1,19 @@
 import React, { useState } from "react"
 
 function AddIngredient( { handleAddIngredient }){
-  const [ingQuantity, setIngQuantity] = useState('')
+  const [ingQuantity, setIngQuantity] = useState(null)
   const [ingUnit, setIngUnit] = useState('each ')
-  const [ingName, setIngName] = useState('')
-
+  const [ingName, setIngName] = useState(null)
   const ingredientList = []
 
   return (
     <ul>
       <input onChange={(e) => {
-        e.preventDefault()
         setIngQuantity(`${e.target.value} `)
       }}
       type="text" placeholder="Quantity"/>
       <select onChange={(e)=>{
-        e.preventDefault()
         setIngUnit(`${e.target.value} `)
-        
       }}>
         <option>each</option>
         <option>oz(s)</option>
@@ -28,19 +24,17 @@ function AddIngredient( { handleAddIngredient }){
       </select>
       <input 
         onChange={(e)=> {
-          e.preventDefault()
           setIngName(`${e.target.value}`)
         }}
         type='text' 
         placeholder="Item"
       />
       <button onClick={(e)=> {
-        e.preventDefault()
         ingredientList.push(ingQuantity, ingUnit, ingName)
         let newIngredient = ingredientList.join('')
         handleAddIngredient(e, newIngredient)
       }}>Add Ingredient</button>
-     </ul>
+     </ul> 
   )
 }
 
