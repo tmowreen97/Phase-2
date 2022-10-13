@@ -10,7 +10,6 @@ export default function MyRecipes( {setRecipes, myRecipes} ){
       setRecipes(data)
     })
   }, [])
-  console.log(myRecipes)
 
   return(
     <div className="myRecipes">
